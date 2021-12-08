@@ -22,6 +22,15 @@ public class MainApp {
                 System.out.println("А я никуда и не еду.");
             }
         }
+
+        public void skateBoardParkActions(){
+            if(!(currentTransport instanceof Skateboard)){
+                System.out.println("К сожалению я не взял секейтборд");
+                return;
+            }
+            Skateboard skateboard = (Skateboard) currentTransport;
+            //skateboard.makeTrick();
+        }
         /* BAD PRACTICE
         public void drive(Car car){
             car.run();
